@@ -1,5 +1,7 @@
 # fun_3000 workflow basics
 
+This guide covers the main actions y'all will need to perform as a member of the research lab and contributor to fun_3000. In addition to establishing norms of what each facet of github means in the context of the project workflow, the guide also contains a cheat sheet of the terminal commands to accomplish these so y'all won't have to go hunting around for them.
+
 ## navigation
 * [I want to set up fun_3000 on my local machine ...](#i-want-to-set-up-fun3000-on-my-local-machine-)
 * [I want to open an issue ...](#i-want-to-open-an-issue-)
@@ -8,7 +10,7 @@
 
 ## I want to set up fun_3000 on my local machine ...
 #### :octocat: on github
-1. Send your github username to @ayota so she can add you to the repo
+1. We can't force you to be part of the repo, so make sure you accept the invitation from github in your email. Ping @ayota if y'all can't find it.
 2. Hit `CLONE OR DOWNLOAD`
 3. You will see a link, copy that link. (If you have SSH authentication set up on you machine, use that one, otherwise grab the https one. It will ask for your github password in the next step if you use the https one.)
 
@@ -47,14 +49,14 @@
       * `BUILD CORPUS` refers to anything dealing with amassing text for the corpus
       * `EVALUATION` refers to the evaluation task
       * `ENHANCEMENT` is where we've been dumping all the nice-to-haves
-  * Don't label anyone "invalid" unless you've talked to them IRL :)
+  * Don't label anyone `INVALID` unless you've talked to them IRL :bowtie:
 4. Assign some folks
 5. We don't really use milestones, but these are another way of organizing things
 6. Hit submit
 
-#### So many issues ...
-  * @username will draw someone else into the conversation
-  * #issue_number will reference another issue
+#### :boom: helpful hints
+  * `@username` will ping someone else to join the conversation
+  * `#issue_number` will reference another issue
   * example: typing `yo @laura : I think this has to do with #50` will ping Laura, and also link to Issue 50, whatever that may be.
   * even more [here] (https://guides.github.com/features/issues/)
 
@@ -92,7 +94,7 @@
  ```shell
  git checkout -b [your new branch] develop
  ```
-  * **a convention for naming branches:** We've settled into a pattern of [issue no.]_[some description of what you're doing]. For example, a branch fixing Issue 38, which describes an issue with toasters exploding for like, no reason, would be `38_exploding_toasters`.
+  :boom: **a convention for naming branches:** We've settled into a pattern of [issue no.]_[some description of what you're doing]. For example, a branch fixing Issue 38, which describes an issue with toasters exploding for like, no reason, would be `38_exploding_toasters`.
 
  ##### Moving to an already-created branch
  ```shell
@@ -128,7 +130,7 @@ Push any fixes/changes to github
  git push
  ```
 
- * **To add longer commit messages,** just do `git commit` and it will automagically open a vim editor. Hit `i` and you can type your message in the terminal. The first line is what shows up next to the commit, so keep it short, and then everything on subsequent lines shows up when they click on that commit. Hit `esc :wq` to save and quit the editor.
+ :boom: **To add longer commit messages,** just do `git commit` and it will automagically open a vim editor. Hit `i` and you can type your message in the terminal. The first line is what shows up next to the commit, so keep it short, and then everything on subsequent lines shows up when they click on that commit. Hit `esc :wq` to save and quit the editor.
 
 #### :octocat: on github
 1. Select `PULL REQUESTS` tab, then `NEW PULL REQUEST`
@@ -138,6 +140,6 @@ Push any fixes/changes to github
    * **Compare** the branch your changes are on (so, the one you made, like `38_exploding_toasters`)
 4. Add any notes, outstanding issues, important emoji expressions, etc. 
    * [All the things.] (http://www.webpagefx.com/tools/emoji-cheat-sheet/)
-5. Let everyone know you're ready to merge! :tada: :tada:
+5. Let everyone know you're ready to merge! :tada: :tada: :tada:
 
 ![](http://i.amz.mshcdn.com/TUGnCLIUndmH2H1WOP2VGgfDmq4=/fit-in/850x850/http%3A%2F%2Fmashable.com%2Fwp-content%2Fgallery%2Fcatmemes%2FKeyboardCat.gif)
