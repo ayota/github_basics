@@ -10,6 +10,7 @@
 #### :octocat: on github
 1. Send your github username to @ayota so she can add you to the repo
 2. Hit `CLONE OR DOWNLOAD`
+3. You will see a link, copy that link. (If you have SSH authentication set up on you machine, use that one, otherwise grab the https one. It will ask for your github password in the next step if you use the https one.)
 
 #### :computer: on your local machine
 1. Go to the directory you want to keep your work
@@ -20,12 +21,20 @@
  ```
 
 3. Bam. You now have a copy of the repo on your local machine
-4. Install requirements.txt 
+4. Hop over to develop because we've been really bad about updating master thus far, so develop has the most up-to-date versions of everything.
+
+ ```shell
+ git checkout develop
+ git pull
+ ```
+
+5. Install requirements.txt 
 
  ```shell
  cd path/to/ddl_nlp/on/your/machine
  pip install -r requirements.txt
  ```
+
 
 ## I want to open an issue ...
 #### :octocat: on github
@@ -52,10 +61,10 @@
 ## I want to work on an issue ...
 
 #### :computer: on your local machine
-1. Do a pull request from develop to make sure your local copy is up to date
+1. Do a pull from develop to make sure your local copy is up to date
  
  ```shell
- git pull master
+ git pull develop
  ```
 
 2. See what branch you're on
@@ -67,18 +76,21 @@
  which should give you something like ...
  
  ```shell
- (fun_3000) nybbler:ddl_nlp ayo$ git branch
-   generate_folds
-   * master
-   post_gensim_similarity_ml
+(fun_3000)nybbler:ddl_nlp ayo$ git branch
+* develop
+  generate_folds
+  master
+  new_feature
+  post_gensim_similarity_ml
+  sample_branch
  ```
 
 3. Get on the right branch
 
- ##### Creating a new branch
+ ##### Creating a new branch from develop
 
  ```shell
- git checkout -b [your new branch]
+ git checkout -b [your new branch] develop
  ```
   * **a convention for naming branches:** We've settled into a pattern of [issue no.]_[some description of what you're doing]. For example, a branch fixing Issue 38, which describes an issue with toasters exploding for like, no reason, would be `38_exploding_toasters`.
 
@@ -128,4 +140,4 @@ Push any fixes/changes to github
    * [All the things.] (http://www.webpagefx.com/tools/emoji-cheat-sheet/)
 5. Let everyone know you're ready to merge! :tada: :tada:
 
-![](https://66.media.tumblr.com/505cca3cbfdca9c49201363490c4463c/tumblr_n48pxdhNSR1rmzrqmo1_500.gif)
+![](https://media.giphy.com/media/10RhccNxPSaglW/giphy.gif)
