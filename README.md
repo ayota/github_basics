@@ -83,6 +83,7 @@
 
 4. Add your code
 5. Push to github
+
  ```shell
  git add .
  git commit -m [THE BEST MESSAGE EVER]
@@ -102,12 +103,14 @@
 ## I want to close an issue ...
 #### :computer: on your local machine
 Push any fixes/changes to github
+
  ```shell
  git add .
  git commit -m "ruined everything. kthxbye."
  git push
  ```
-* To add longer commit messages, just do `git commit` and it will automagically open a vim editor. Hit `i` and you can type your message in the terminal. The first line is what shows up next to the commit, so keep it short, and then everything on subsequent lines shows up when they click on that commit.
+
+ * **To add longer commit messages,** just do `git commit` and it will automagically open a vim editor. Hit `i` and you can type your message in the terminal. The first line is what shows up next to the commit, so keep it short, and then everything on subsequent lines shows up when they click on that commit.
 
 #### :octocat: on github
 1. Select `PULL REQUESTS` tab, then `NEW PULL REQUEST`
