@@ -8,15 +8,18 @@
 #### :computer: on your local machine
 1. Go to the directory you want to keep your work
 2. In the terminal (or w/e the command line is on windows):
-   ```shell
-   git clone [WHAT YOU COPIED FROM THE REPO]
-   ```
+
+ ```shell
+ git clone [WHAT YOU COPIED FROM THE REPO]
+ ```
+
 3. Bam. You now have a copy of the repo on your local machine
 4. Install requirements.txt 
-   ```shell
-   cd path/to/ddl_nlp/on/your/machine
-   pip install -r requirements.txt
-   ```
+
+ ```shell
+ cd path/to/ddl_nlp/on/your/machine
+ pip install -r requirements.txt
+ ```
 
 ## I want to open an issue ...
 #### :octocat: on github
@@ -44,43 +47,47 @@
 
 #### :computer: on your local machine
 1. Do a pull request from develop to make sure your local copy is up to date
+ 
  ```shell
  git pull master
  ```
 
 2. See what branch you're on
-```shell
-git branch
-```
+ 
+ ```shell
+ git branch
+ ```
 
 which should give you something like ...
-```shell
-(fun_3000) nybbler:ddl_nlp ayo$ git branch
-  generate_folds
-  * master
-  post_gensim_similarity_ml
-```
+ 
+ ```shell
+ (fun_3000) nybbler:ddl_nlp ayo$ git branch
+   generate_folds
+   * master
+   post_gensim_similarity_ml
+ ```
 
 3. Get on the right branch
 
 ##### Creating a new branch
-```shell
-git checkout -b [your new branch]
-```
+
+ ```shell
+ git checkout -b [your new branch]
+ ```
 * **Naming branches:** We've settled into a pattern of [issue no.]_[some description of what you're doing]. For example, a branch fixing Issue 38, which describes an issue with toasters exploding for like, no reason, would be `38_exploding_toasters`.
 
 ##### Moving to an already-created branch
-```shell
-git checkout [your branch name here]
-```
+ ```shell
+ git checkout [your branch name here]
+ ```
 
 4. Add your code
 5. Push to github
-```shell
-git add .
-git commit -m [THE BEST MESSAGE EVER]
-git push
-```
+ ```shell
+ git add .
+ git commit -m [THE BEST MESSAGE EVER]
+ git push
+ ```
 
 #### :octocat: on github
 1. Go to the issue you're addressing, make a note of your fixes/open discussion for outstanding issues
@@ -95,11 +102,11 @@ git push
 ## I want to close an issue ...
 #### :computer: on your local machine
 Push any fixes/changes to github
-```shell
-git add .
-git commit -m "ruined everything. kthxbye."
-git push
-```
+ ```shell
+ git add .
+ git commit -m "ruined everything. kthxbye."
+ git push
+ ```
 * To add longer commit messages, just do `git commit` and it will automagically open a vim editor. Hit `i` and you can type your message in the terminal. The first line is what shows up next to the commit, so keep it short, and then everything on subsequent lines shows up when they click on that commit.
 
 #### :octocat: on github
