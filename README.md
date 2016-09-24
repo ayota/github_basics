@@ -16,7 +16,7 @@
 5. We don't really use milestones, but these are another way of organizing things
 6. Hit submit
 
-##### More about issues
+#### So many issues ...
   * @username will draw someone else into the conversation
   * #issue_number will reference another issue
   * example: typing `@laura : I think this has to do with #50` will ping Laura, and also link to Issue 50, whatever that may be.
@@ -88,7 +88,7 @@ git push
 1. Hit "New Pull Request"
 2. Name your pull request like: closes [issue no. you're addressing]. some more details. (e.g., `closes 38. stops toasters from exploding.`)
 3. Hook your branch up against develop. Pray there are no conflicts.
-* **Base** the branch you want to merge into (usually develop)
-* **Compare** the branch your changes are on (so, the one you made, like `38_exploding_toasters`)
+   * **Base** the branch you want to merge into (usually develop)
+   * **Compare** the branch your changes are on (so, the one you made, like `38_exploding_toasters`)
 4. Add any notes, outstanding issues, important emoji expressions, etc. 
 5. Let everyone know you're ready to merge!
