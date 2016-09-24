@@ -1,16 +1,16 @@
 # fun_3000 workflow basics
 
 ## I want to open an issue ...
-#### on github
+#### :octocat: on github
 1. Select the `ISSUES` tab then the green `NEW ISSUE` button
 2. Give your issue a title and be very descriptive in what the problem and proposed solution is. Include psuedo code, clear inputs and outputs, and any relevant links because, let's face it, we're all going to forget pretty shortly after discussing these things. If you know there are multiple steps,
    - [ ] << checkboxes are super handy (syntax is ` - [ ] `), and it automagically makes a little progress bar at the bottom of the issue. This and other markdown fanciness are available [here] (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)
 3. Add some labels
-  * Procedural: "in progress"; "ready for QA"; "not ready yet"
+  * Procedural: `IN PROGRESS` | `READY FOR QA` | `NOT READY YET`
   * Parts of the project
-      * "build corpus" refers to anything dealing with amassing text for the corpus
-      * "evaluation" refers to the evaluation task
-      * "enhancement" is where we've been dumping all the nice-to-haves
+      * `BUILD CORPUS` refers to anything dealing with amassing text for the corpus
+      * `EVALUATION` refers to the evaluation task
+      * `ENHANCEMENT` is where we've been dumping all the nice-to-haves
   * Don't label anyone "invalid" unless you've talked to them IRL :)
 4. Assign some folks
 5. We don't really use milestones, but these are another way of organizing things
@@ -19,12 +19,12 @@
 #### So many issues ...
   * @username will draw someone else into the conversation
   * #issue_number will reference another issue
-  * example: typing `@laura : I think this has to do with #50` will ping Laura, and also link to Issue 50, whatever that may be.
+  * example: typing `yo @laura : I think this has to do with #50` will ping Laura, and also link to Issue 50, whatever that may be.
   * even more [here] (https://guides.github.com/features/issues/)
 
 ## I want to work on an issue ...
 
-#### on your local machine
+#### :computer: on your local machine
 1. Do a pull request from develop to make sure your local copy is up to date
  ```shell
  git pull master
@@ -64,27 +64,27 @@ git commit -m [THE BEST MESSAGE EVER]
 git push
 ```
 
-#### on github
+#### :octocat: on github
 1. Go to the issue you're addressing, make a note of your fixes/open discussion for outstanding issues
 2. Assign ready for QA label
 
 
-## I want to QA someone else's contribution ...
+## I want to QA someone else's code ...
 1. Grab their branch
 2. Test the code on your local machine
 3. Once it's OK, note on the issue that everything's great, or fix any issues you encounter after discussion with the creator
 
 ## I want to close an issue ...
-#### on your local machine
+#### :computer: on your local machine
 Push any fixes/changes to github
 ```shell
 git add .
-git commit -m "YOUR AWESOME COMMIT MESSAGE"
+git commit -m "ruined everything. kthxbye."
 git push
 ```
 * To add longer commit messages, just do `git commit` and it will automagically open a vim editor. Hit `i` and you can type your message in the terminal. The first line is what shows up next to the commit, so keep it short, and then everything on subsequent lines shows up when they click on that commit.
 
-#### on github
+#### :octocat: on github
 1. Select `PULL REQUESTS` tab, then `NEW PULL REQUEST`
 2. Name your pull request like: closes [issue no. you're addressing]. some more details. (e.g., `closes 38. stops toasters from exploding.`)
 3. Hook your branch up against develop. Pray there are no conflicts.
