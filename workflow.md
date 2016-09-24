@@ -41,8 +41,8 @@ This guide covers the main actions y'all will need to perform as a member of the
 ## I want to open an issue ...
 #### :octocat: on github
 1. Select the `ISSUES` tab then the green `NEW ISSUE` button
-2. Give your issue a title and be very descriptive in what the problem and proposed solution is. Include psuedo code, clear inputs and outputs, and any relevant links because, let's face it, we're all going to forget pretty shortly after discussing these things. If you know there are multiple steps,
-   - [ ] << checkboxes are super handy (syntax is ` - [ ] `), and it automagically makes a little progress bar at the bottom of the issue. This and other markdown fanciness are available [here] (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)
+2. Give your issue a title and be very descriptive in what the problem and proposed solution is. Include psuedo code, clear inputs and outputs, and any relevant links because, let's face it, we're all going to forget pretty shortly after discussing these things. 
+  :boom: **If you know there are multiple steps,** checkboxes are super handy (syntax is ` - [ ] `), and it automagically makes a little progress bar at the bottom of the issue. This and other markdown fanciness are available [here] (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)
 3. Add some labels
   * Procedural: `IN PROGRESS` | `READY FOR QA` | `NOT READY YET`
   * Parts of the project
@@ -94,7 +94,7 @@ This guide covers the main actions y'all will need to perform as a member of the
  ```shell
  git checkout -b [your new branch] develop
  ```
-  :boom: **a convention for naming branches:** We've settled into a pattern of [issue no.]_[some description of what you're doing]. For example, a branch fixing Issue 38, which describes an issue with toasters exploding for like, no reason, would be `38_exploding_toasters`.
+  :boom: **The convention for naming branches** is [issue no.]_[some description of what you're doing]. For example, a branch fixing Issue 38, which describes an issue with toasters exploding for like, no reason, would be `38_exploding_toasters`.
 
  ##### Moving to an already-created branch
  ```shell
