@@ -1,5 +1,8 @@
 # fun_3000 workflow basics
 
+[I want to set up fun_3000 on my local machine ...](#i-want-to-set-up-fun-3000-on-my-local-machine)
+[](#)
+
 ## I want to set up fun_3000 on my local machine ...
 #### :octocat: on github
 1. Send your github username to @ayota so she can add you to the repo
