@@ -140,4 +140,4 @@ Push any fixes/changes to github
    * [All the things.] (http://www.webpagefx.com/tools/emoji-cheat-sheet/)
 5. Let everyone know you're ready to merge! :tada: :tada:
 
-![](https://media.giphy.com/media/10RhccNxPSaglW/giphy.gif)
+![](http://i.amz.mshcdn.com/TUGnCLIUndmH2H1WOP2VGgfDmq4=/fit-in/850x850/http%3A%2F%2Fmashable.com%2Fwp-content%2Fgallery%2Fcatmemes%2FKeyboardCat.gif)
