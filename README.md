@@ -2,7 +2,7 @@
 
 ## I want to open an issue ...
 #### on github
-1. Click the green "New Issue" button
+1. Select the `ISSUES` tab then the green `NEW ISSUE` button
 2. Give your issue a title and be very descriptive in what the problem and proposed solution is. Include psuedo code, clear inputs and outputs, and any relevant links because, let's face it, we're all going to forget pretty shortly after discussing these things. If you know there are multiple steps,
    - [ ] << checkboxes are super handy (syntax is ` - [ ] `), and it automagically makes a little progress bar at the bottom of the issue. This and other markdown fanciness are available [here] (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)
 3. Add some labels
@@ -85,7 +85,7 @@ git push
 * To add longer commit messages, just do `git commit` and it will automagically open a vim editor. Hit `i` and you can type your message in the terminal. The first line is what shows up next to the commit, so keep it short, and then everything on subsequent lines shows up when they click on that commit.
 
 #### on github
-1. Hit `diff + NEW PULL REQUEST`
+1. Select `PULL REQUESTS` tab, then `NEW PULL REQUEST`
 2. Name your pull request like: closes [issue no. you're addressing]. some more details. (e.g., `closes 38. stops toasters from exploding.`)
 3. Hook your branch up against develop. Pray there are no conflicts.
    * **Base** the branch you want to merge into (usually develop)
