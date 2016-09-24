@@ -118,3 +118,5 @@ Push any fixes/changes to github
 4. Add any notes, outstanding issues, important emoji expressions, etc. 
    * [All the things.] (http://www.webpagefx.com/tools/emoji-cheat-sheet/)
 5. Let everyone know you're ready to merge! :tada: :tada:
+
+![](https://66.media.tumblr.com/505cca3cbfdca9c49201363490c4463c/tumblr_n48pxdhNSR1rmzrqmo1_500.gif)
