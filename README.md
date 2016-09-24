@@ -1,5 +1,23 @@
 # fun_3000 workflow basics
 
+## I want to set up fun_3000 on my local machine ...
+#### :octocat: on github
+1. Send your github username to @ayota so she can add you to the repo
+2. Hit `CLONE OR DOWNLOAD`
+
+#### :computer: on your local machine
+1. Go to the directory you want to keep your work
+2. In the terminal (or w/e the command line is on windows):
+   ```shell
+   git clone [WHAT YOU COPIED FROM THE REPO]
+   ```
+3. Bam. You now have a copy of the repo on your local machine
+4. Install requirements.txt 
+   ```shell
+   cd path/to/ddl_nlp/on/your/machine
+   pip install -r requirements.txt
+   ```
+
 ## I want to open an issue ...
 #### :octocat: on github
 1. Select the `ISSUES` tab then the green `NEW ISSUE` button
