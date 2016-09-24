@@ -26,17 +26,17 @@
 
 #### on your local machine
 1. Do a pull request from develop to make sure your local copy is up to date
- ```
+ ```shell
  git pull master
  ```
 
 2. See what branch you're on
-```
+```shell
 git branch
 ```
 
 which should give you something like ...
-```
+```shell
 (fun_3000) nybbler:ddl_nlp ayo$ git branch
   generate_folds
   * master
@@ -46,19 +46,19 @@ which should give you something like ...
 3. Get on the right branch
 
 ##### Creating a new branch
-```
+```shell
 git checkout -b [your new branch]
 ```
 * **Naming branches:** We've settled into a pattern of [issue no.]_[some description of what you're doing]. For example, a branch fixing Issue 38, which describes an issue with toasters exploding for like, no reason, would be `38_exploding_toasters`.
 
 ##### Moving to an already-created branch
-```
+```shell
 git checkout [your branch name here]
 ```
 
 4. Add your code
 5. Push to github
-```
+```shell
 git add .
 git commit -m [THE BEST MESSAGE EVER]
 git push
@@ -77,7 +77,7 @@ git push
 ## I want to close an issue ...
 #### on your local machine
 Push any fixes/changes to github
-```
+```shell
 git add .
 git commit -m "YOUR AWESOME COMMIT MESSAGE"
 git push
@@ -91,4 +91,5 @@ git push
    * **Base** the branch you want to merge into (usually develop)
    * **Compare** the branch your changes are on (so, the one you made, like `38_exploding_toasters`)
 4. Add any notes, outstanding issues, important emoji expressions, etc. 
-5. Let everyone know you're ready to merge!
+   * [All the things.] (http://www.webpagefx.com/tools/emoji-cheat-sheet/)
+5. Let everyone know you're ready to merge! :tada: :tada:
