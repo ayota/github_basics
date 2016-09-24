@@ -58,7 +58,7 @@
  git branch
  ```
 
-which should give you something like ...
+ which should give you something like ...
  
  ```shell
  (fun_3000) nybbler:ddl_nlp ayo$ git branch
@@ -69,14 +69,14 @@ which should give you something like ...
 
 3. Get on the right branch
 
-##### Creating a new branch
+ ##### Creating a new branch
 
  ```shell
  git checkout -b [your new branch]
  ```
-* **Naming branches:** We've settled into a pattern of [issue no.]_[some description of what you're doing]. For example, a branch fixing Issue 38, which describes an issue with toasters exploding for like, no reason, would be `38_exploding_toasters`.
+  * **a convention for naming branches:** We've settled into a pattern of [issue no.]_[some description of what you're doing]. For example, a branch fixing Issue 38, which describes an issue with toasters exploding for like, no reason, would be `38_exploding_toasters`.
 
-##### Moving to an already-created branch
+ ##### Moving to an already-created branch
  ```shell
  git checkout [your branch name here]
  ```
