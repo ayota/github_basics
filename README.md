@@ -1,10 +1,10 @@
 # fun_3000 workflow basics
 
-## contents
-[I want to set up fun_3000 on my local machine ...](#i-want-to-set-up-fun-3000-on-my-local-machine)
-[I want to open an issue ...](#i-want-to-open-an-issue)
-[I want to QA someone else's code ...](#i-want-to-QA-someone-elses-code)
-[I want to close an issue ...](#i-want-to-close-an-issue)
+## navigation
+* [I want to set up fun_3000 on my local machine ...](#i-want-to-set-up-fun-3000-on-my-local-machine-...)
+* [I want to open an issue ...](#i-want-to-open-an-issue-...)
+* [I want to QA someone else's code ...](#i-want-to-QA-someone-elses-code-...)
+* [I want to close an issue ...](#i-want-to-close-an-issue-...)
 
 ## I want to set up fun_3000 on my local machine ...
 #### :octocat: on github
