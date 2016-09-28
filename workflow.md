@@ -148,14 +148,12 @@ This guide covers the main actions y'all will need to perform as a member of the
  git add [THE FILE YOU EDITED]
  git add [ANOTHER FILE YOU EDITED]
  ```
-
- * :whale: ... repeat for all the files you changed ... :whale: *
- 
+ :whale: *... repeat for all the files you changed ...* :whale:
  ```shell
  git commit -m [THE BEST MESSAGE EVER]
  git push
  ```
- * * You can just add everything you edited by doing ` git add . ` , but in the interest of not uploading random things like data (.csv, .xls, and friends) or iPython notebooks, sandbox code, etc., it might be better to do it one by one. *
+ :boom: You can just add everything you edited by doing ` git add . ` , but in the interest of not uploading random things like data (.csv, .xls, and friends) or iPython notebooks, sandbox code, etc., it might be better to do it one by one.
 
 #### :octocat: on github
 1. Go to the issue you're addressing, make a note of your fixes/open discussion for outstanding issues
