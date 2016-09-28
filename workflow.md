@@ -155,6 +155,8 @@ This guide covers the main actions y'all will need to perform as a member of the
  ```
  :boom: You can just add everything you edited by doing ` git add . ` , but in the interest of not uploading random things like data (.csv, .xls, and friends) or iPython notebooks, sandbox code, etc., it might be better to do it one by one.
 
+ :boom: To see what you have tracked/changed for the upcoming comming, use ` git status `. If you accidentally add a file you don't want to push to the repo, you can untrack files by using ` git reset head ` will unstaged everything and you can start over again.
+
 #### :octocat: on github
 1. Go to the issue you're addressing, make a note of your fixes/open discussion for outstanding issues
 2. Assign ready for QA label
