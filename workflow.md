@@ -8,7 +8,9 @@ This guide covers the main actions y'all will need to perform as a member of the
 * [I want to QA someone else's code ...](#i-want-to-QA-someone-elses-code-)
 * [I want to close an issue ...](#i-want-to-close-an-issue-)
 
+
 ## I want to set up fun_3000 on my local machine ...
+
 #### :octocat: on github
 1. We can't force you to be part of the repo, so make sure you accept the invitation from github in your email. Ping @ayota if y'all can't find it.
 2. Hit `CLONE OR DOWNLOAD`
@@ -16,29 +18,65 @@ This guide covers the main actions y'all will need to perform as a member of the
 
 #### :computer: on your local machine
 1. Go to the directory you want to keep your work
-2. In the terminal (or w/e the command line is on windows):
+2. Making a virtualenv or conda environment is recommended but not required. This will allow you to keep a clean copy of the requirements needed to run/test the components of the program, and easily track any new packages you install for some future feature.
+  * To install virtualenv:
+    
+    ```shell
+    nybbler:fun_3000 ayo$ pip install virtualenv
+    ```
+
+  * To make virtualenv:
+    
+    ```shell
+    nybbler:fun_3000 ayo$ virtualenv venv
+    ```
+
+    * I usually call them venv, but you can call it whatever you want.
+
+  * To activate:
+
+    ```shell
+    nybbler:fun_3000 ayo$ source venv/bin/activate
+    ```
+
+    * You will know it is activated because your command line will look like this:
+    ```shell
+    (venv)nybbler:fun_3000 ayo$ echo "bam"
+    ```
+
+  * To deactivate:
+    ```shell
+    (venv)nybbler:fun_3000 ayo$ deactivate
+    ```
+
+  * Updating requirements.txt:
+    ```shell
+    (venv)nybbler:[your_repo] ayo$ pip freeze > requirements.txt
+    ```
+
+3. In the terminal (or w/e the command line is on windows):
 
  ```shell
  git clone [WHAT YOU COPIED FROM THE REPO]
  ```
 
-3. Bam. You now have a copy of the repo on your local machine
-4. Hop over to develop because we've been really bad about updating master thus far, so develop has the most up-to-date versions of everything.
+4. Bam. You now have a copy of the repo on your local machine
+5. Hop over to develop because we've been really bad about updating master thus far, so develop has the most up-to-date versions of everything.
 
  ```shell
  git checkout develop
  git pull
  ```
 
-5. Install requirements.txt 
+6. Install requirements.txt 
 
  ```shell
  cd path/to/ddl_nlp/on/your/machine
  pip install -r requirements.txt
  ```
 
-
 ## I want to open an issue ...
+
 #### :octocat: on github
 1. Select the `ISSUES` tab then the green `NEW ISSUE` button
 2. Give your issue a title and be very descriptive in what the problem and proposed solution is. Include psuedo code, clear inputs and outputs, and any relevant links because, let's face it, we're all going to forget pretty shortly after discussing these things. 
@@ -60,6 +98,7 @@ This guide covers the main actions y'all will need to perform as a member of the
   * `#issue_number` will reference another issue
   * example: typing `yo @laura : I think this has to do with #50` will ping Laura, and also link to Issue 50, whatever that may be.
   * even more [here] (https://guides.github.com/features/issues/)
+
 
 ## I want to work on an issue ...
 
@@ -93,23 +132,30 @@ This guide covers the main actions y'all will need to perform as a member of the
  ##### Creating a new branch from develop
 
  ```shell
- git checkout -b [your new branch] develop
+ git checkout -b [YOUR NEW BRANCH] develop
  ```
   :boom: **The convention for naming branches** is [issue no.]_[some description of what you're doing]. For example, a branch fixing Issue 38, which describes an issue with toasters exploding for like, no reason, would be `38_exploding_toasters`.
 
  ##### Moving to an already-created branch
  ```shell
- git checkout [your branch name here]
+ git checkout [YOUR BRANCH NAME HERE]
  ```
 
 4. Add your code
 5. Push to github
 
  ```shell
- git add .
+ git add [THE FILE YOU EDITED]
+ git add [ANOTHER FILE YOU EDITED]
+ ```
+
+ * :whale: ... repeat for all the files you changed ... :whale: *
+ 
+ ```shell
  git commit -m [THE BEST MESSAGE EVER]
  git push
  ```
+ * * You can just add everything you edited by doing ` git add . ` , but in the interest of not uploading random things like data (.csv, .xls, and friends) or iPython notebooks, sandbox code, etc., it might be better to do it one by one. *
 
 #### :octocat: on github
 1. Go to the issue you're addressing, make a note of your fixes/open discussion for outstanding issues
@@ -117,16 +163,25 @@ This guide covers the main actions y'all will need to perform as a member of the
 
 
 ## I want to QA someone else's code ...
-1. Grab their branch
+
+#### :computer: on your local machine
+1. Grab the branch
+
+```shell
+git branch [THE BRANCH FOR THE NEW FEATURE]
+```
+
 2. Test the code on your local machine
-3. Once it's OK, note on the issue that everything's great, or fix any issues you encounter after discussion with the creator
+3. Once it's OK, note on the issue that everything's great, or fix any issues you encounter after discussion with the creator. Bonus points for updating the readme to clarify instructions based on how you were able to run the code.
+
 
 ## I want to close an issue ...
+
 #### :computer: on your local machine
 Push any fixes/changes to github
 
  ```shell
- git add .
+ git add [ALL THE CHANGED FILES]
  git commit -m "ruined everything. kthxbye."
  git push
  ```
