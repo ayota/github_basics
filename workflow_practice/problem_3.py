@@ -2,7 +2,7 @@ def multiply(x,y):
 	'''
 	Multiplies all the things!
 	'''
-	return x / y
+	return x % y
 
 if __name__ == "__main__":
 	print multiply(5,4) == 20
