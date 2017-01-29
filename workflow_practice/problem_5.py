@@ -1,7 +1,5 @@
 def multiply(x,y):
-	'''
-	Multiplies all the things!
-	'''
+	#updates to develop
 	return x % y
 
 if __name__ == "__main__":
